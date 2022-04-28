@@ -1,9 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2022-04-28T09:50:42.967Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="3REPazUZaGYAJBX8BUyX" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-28T10:00:58.827Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="9cBlVnn-zNS5MwEMzMOK" version="17.4.6" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1422" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1441" dy="1904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="uD1bxYfoeps85YKgvhQN-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uD1bxYfoeps85YKgvhQN-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="uD1bxYfoeps85YKgvhQN-1" value="step 0：0、订单状态时valid。&lt;br&gt;&lt;br&gt;1、order对应bookingdate&amp;gt;=start&amp;amp;&amp;amp;bookingdate&amp;lt;=enddate&lt;br&gt;&lt;br&gt;2、订单对应的Region有from/to Region" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="104" y="20" width="300" height="90" as="geometry" />
         </mxCell>
@@ -34,18 +39,8 @@
             <mxPoint x="299" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-9" value="n Orders in Selection：step 0的集合减去 step 1 中的集装箱和直运订单 加上 集装箱中多减的计划外订单数。 就是需要Plan的Order数。" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="670" width="170" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-18" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.578;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="uD1bxYfoeps85YKgvhQN-1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="470" y="85" as="sourcePoint" />
-            <mxPoint x="680" y="50" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="520" y="85" />
-              <mxPoint x="470" y="35" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="uD1bxYfoeps85YKgvhQN-9" value="n Orders in Selection：step 0的集合减去 step 1 中&lt;br&gt;&lt;br&gt;的集装箱和直运订单 加上 集装箱中多减的计划外订&lt;br&gt;&lt;br&gt;单数。 就是需要Plan的Order数。" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="-40" width="430" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
