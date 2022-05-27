@@ -1,46 +1,97 @@
-<mxfile host="app.diagrams.net" modified="2022-04-28T10:00:58.827Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="9cBlVnn-zNS5MwEMzMOK" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-27T10:11:05.421Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36" etag="5kNa-K-s3J4wIYiq-8Kf" version="18.1.3" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1441" dy="1904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="uD1bxYfoeps85YKgvhQN-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uD1bxYfoeps85YKgvhQN-1">
+        <mxCell id="uD1bxYfoeps85YKgvhQN-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="uD1bxYfoeps85YKgvhQN-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="550" y="30" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-1" value="step 0：0、订单状态时valid。&lt;br&gt;&lt;br&gt;1、order对应bookingdate&amp;gt;=start&amp;amp;&amp;amp;bookingdate&amp;lt;=enddate&lt;br&gt;&lt;br&gt;2、订单对应的Region有from/to Region" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uD1bxYfoeps85YKgvhQN-1" value="step 0：0、订单状态时valid。&lt;br&gt;&lt;br&gt;1、order对应bookingdate&amp;gt;=start&amp;amp;&amp;amp;bookingdate&amp;lt;=enddate&lt;br&gt;&lt;br&gt;2、订单对应的Region有from/to Region" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="104" y="20" width="300" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-3" value="step 1:0、后端找出masterplan里面和step 0重合的订单以及order对应的运输情况（ocean和direct）。&lt;br&gt;&lt;br&gt;1、对于ocean运输的，若一个集装箱里面全是step 0里面的订单，则该箱子标记为可计划，若箱里有其他订单则该箱子标记为不可计划；对应前端无法选中该箱子，处理完成后显示以集装箱为纬度的订单列表。&lt;br&gt;&lt;br&gt;2、对于直接运输的，返回全部direct订单列表。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uD1bxYfoeps85YKgvhQN-3" value="step 1:0、后端找出masterplan里面和step 0重合的订单以及order对应的运输情况（ocean和direct）。&lt;br&gt;&lt;br&gt;1、对于ocean运输的，若一个集装箱里面全是step 0里面的订单，则该箱子标记为可计划，若箱里有其他订单则该箱子标记为不可计划；对应前端无法选中该箱子，处理完成后显示以集装箱为纬度的订单列表。&lt;br&gt;&lt;br&gt;2、对于直接运输的，返回全部direct订单列表。" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="49" y="180" width="410" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uD1bxYfoeps85YKgvhQN-1" target="uD1bxYfoeps85YKgvhQN-3">
+        <mxCell id="uD1bxYfoeps85YKgvhQN-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="uD1bxYfoeps85YKgvhQN-1" target="uD1bxYfoeps85YKgvhQN-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="249" y="200" as="sourcePoint" />
             <mxPoint x="299" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-5" value="step 2:0、将没有被Plan过的OrderSet + 在masterPlan里面需要Replan的Set&amp;nbsp; = 总的需要Plan的Order集合。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uD1bxYfoeps85YKgvhQN-5" value="step 2:0、将没有被Plan过的OrderSet + 在masterPlan里面需要Replan的Set&amp;nbsp; = 总的需要Plan的Order集合。" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="82.75" y="370" width="342.5" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-6" value="step 3： 0、选中的Order就是需要排除的Order集合，从上一步step 2中 减去 需要排除的Order集合 = 就是真正需要 Plan的Order集合。&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uD1bxYfoeps85YKgvhQN-6" value="step 3： 0、选中的Order就是需要排除的Order集合，从上一步step 2中 减去 需要排除的Order集合 = 就是真正需要 Plan的Order集合。&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="94" y="490" width="320" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.48;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.485;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="uD1bxYfoeps85YKgvhQN-3" target="uD1bxYfoeps85YKgvhQN-5">
+        <mxCell id="uD1bxYfoeps85YKgvhQN-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.48;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.485;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="uD1bxYfoeps85YKgvhQN-3" target="uD1bxYfoeps85YKgvhQN-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="246" y="310" as="sourcePoint" />
             <mxPoint x="299" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.477;exitY=1.014;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.475;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="uD1bxYfoeps85YKgvhQN-5" target="uD1bxYfoeps85YKgvhQN-6">
+        <mxCell id="uD1bxYfoeps85YKgvhQN-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.477;exitY=1.014;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.475;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="uD1bxYfoeps85YKgvhQN-5" target="uD1bxYfoeps85YKgvhQN-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="249" y="480" as="sourcePoint" />
             <mxPoint x="299" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uD1bxYfoeps85YKgvhQN-9" value="n Orders in Selection：step 0的集合减去 step 1 中&lt;br&gt;&lt;br&gt;的集装箱和直运订单 加上 集装箱中多减的计划外订&lt;br&gt;&lt;br&gt;单数。 就是需要Plan的Order数。" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="-40" width="430" height="160" as="geometry" />
+        <mxCell id="uD1bxYfoeps85YKgvhQN-9" value="n Orders in Selection：step 0的集合减去 step 1 中&lt;br&gt;&lt;br&gt;的集装箱和直运订单 加上 集装箱中多减的计划外订&lt;br&gt;&lt;br&gt;单数。 就是需要Plan的Order数。" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="-60" width="430" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-1" target="IXvnHv_U1dAUnTwolW6L-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-1" value="用户输入密码是否正确？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="520" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-2" target="IXvnHv_U1dAUnTwolW6L-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-2" value="判断该用户是否被禁用（status=forbidden）" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="800" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-6" value="true" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="560" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-7" value="重置用户的ErrorNum为0 。账号正常使用" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-2" target="IXvnHv_U1dAUnTwolW6L-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="810" as="sourcePoint" />
+            <mxPoint x="1080" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-9" value="false" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="910" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-10" target="IXvnHv_U1dAUnTwolW6L-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-10" target="IXvnHv_U1dAUnTwolW6L-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-10" value="用户禁用时间是否超过10分钟，距离当前时间" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="880" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-15" value="true" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="830" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-17" value="解锁status=valid ；重置ErrorNum = 0，账号正常登录。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-19" value="true" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="990" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-21" value="还未到解锁时间，提醒用户等待。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-23" value="false" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="970" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
