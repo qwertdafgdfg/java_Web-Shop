@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-28T03:09:12.039Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36" etag="EAnZBou7pdXxXRa8vwzS" version="18.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-28T03:45:54.097Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36" etag="GHfJVfhPe-_AIM2xhqlZ" version="18.1.3" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1422" dy="1904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -60,8 +60,16 @@
         <mxCell id="IXvnHv_U1dAUnTwolW6L-6" value="true" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1150" y="560" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-7" target="IXvnHv_U1dAUnTwolW6L-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="1296" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1040" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="IXvnHv_U1dAUnTwolW6L-7" value="重置用户的ErrorNum为0 。账号正常使用" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="980" y="960" width="120" height="60" as="geometry" />
+          <mxGeometry x="980" y="1040" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IXvnHv_U1dAUnTwolW6L-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-2" target="IXvnHv_U1dAUnTwolW6L-7">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -84,11 +92,22 @@
         <mxCell id="IXvnHv_U1dAUnTwolW6L-15" value="true" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1220" y="830" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-17" target="IXvnHv_U1dAUnTwolW6L-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1340" y="1240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1340" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="IXvnHv_U1dAUnTwolW6L-17" value="解锁status=valid ；重置ErrorNum = 0，账号正常登录。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1280" y="1040" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IXvnHv_U1dAUnTwolW6L-19" value="true" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1290" y="990" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-21" target="IXvnHv_U1dAUnTwolW6L-60">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="IXvnHv_U1dAUnTwolW6L-21" value="还未到解锁时间，提醒用户等待。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1510" y="1040" width="120" height="60" as="geometry" />
@@ -96,11 +115,71 @@
         <mxCell id="IXvnHv_U1dAUnTwolW6L-23" value="false" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1520" y="970" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-38" target="IXvnHv_U1dAUnTwolW6L-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-38" target="IXvnHv_U1dAUnTwolW6L-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="IXvnHv_U1dAUnTwolW6L-38" value="判断该用户是否在forbidden状态，且锁定状态超过十分钟了？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1640" y="640" width="280" height="80" as="geometry" />
         </mxCell>
         <mxCell id="IXvnHv_U1dAUnTwolW6L-42" value="false" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1620" y="535" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-43" target="IXvnHv_U1dAUnTwolW6L-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-43" value="解锁用户status=valid且ErrorNum = 1 ；" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="800" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-45" value="true" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1750" y="750" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-47" target="IXvnHv_U1dAUnTwolW6L-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1710" y="1240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2155" y="1170" />
+              <mxPoint x="2130" y="1170" />
+              <mxPoint x="2130" y="1240" />
+              <mxPoint x="2140" y="1240" />
+              <mxPoint x="2140" y="1280" />
+              <mxPoint x="1700" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-47" value="statusf=orbidden且时间lastdate置为当前时间，ErrorNum清0。前端提示用户被锁定，" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2010" y="1040" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-49" target="IXvnHv_U1dAUnTwolW6L-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-49" value="&lt;span style=&quot;&quot;&gt;前端提示用户还有倒计几次的尝试次数？&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1730" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-51" target="IXvnHv_U1dAUnTwolW6L-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IXvnHv_U1dAUnTwolW6L-51" target="IXvnHv_U1dAUnTwolW6L-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1960" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-51" value="&lt;span style=&quot;&quot;&gt;ErrorNum ++ ；判断ErrorNum是否等于4了？&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2010" y="805" width="290" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-55" value="false" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="650" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-57" value="true" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2125" y="915" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-59" value="false" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="905" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IXvnHv_U1dAUnTwolW6L-60" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="1200" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
